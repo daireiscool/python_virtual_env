@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  python_docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILD_NUMBER: 0.0.1
+    volumes:
+      - ./code_python:/home/code_python
+      - ./app:/home/app
+    ports:
+      - 8889:8889
+    user: root
+    restart: "no"
