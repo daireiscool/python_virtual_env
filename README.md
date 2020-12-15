@@ -13,6 +13,9 @@ When new python modules are added, they need to be added to requirements.
 ###### docker-compose build  
 Build the docker  
 
+###### make jupyter  
+Open jupyter in local browser
+
 ###### make dev-bash  
 Enter into the docker, to run run python commands.
 
